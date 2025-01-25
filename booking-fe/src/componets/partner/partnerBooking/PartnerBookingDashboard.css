@@ -1,0 +1,11 @@
+.hover-row:hover {
+  background-color: azure;
+}
+.hover-row {
+  cursor: pointer;
+}
+.partner-booking-dashboard {
+  width: 80%;
+  margin-left: 16%;
+  height: 1024px;
+}

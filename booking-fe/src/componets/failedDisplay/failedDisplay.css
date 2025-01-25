@@ -1,0 +1,51 @@
+.failedDisplay-content {
+  position: fixed; /* Fix the position to the viewport */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the element to be exactly centered */
+  z-index: 9999; /* Optional: ensure it appears above other content */
+  background-color: white;
+  border: 0px solid #ccc; /* Optional: border */
+  padding: 20px; /* Optional: padding inside the div */
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.failedDisplay-image {
+  width: 50%; /* or a specific width */
+  height: 100%; /* or a specific height */
+  overflow: hidden;
+  justify-items: center;
+  padding: 10%;
+}
+
+.failedDisplay-image > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.failedDisplay-text {
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.failedDisplay-text > p {
+  font-size: 30px;
+  text-align: center;
+}
+.go-to-payment {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+}

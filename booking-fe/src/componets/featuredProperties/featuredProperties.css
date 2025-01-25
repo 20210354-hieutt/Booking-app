@@ -1,0 +1,96 @@
+/* Kiểu cho thẻ cha của các mục */
+.fp {
+  display: flex;
+  justify-content: space-between; /* Căn giữa các mục trong hàng */
+  width: 100%;
+  max-width: 1024px;
+  gap: 20px;
+}
+
+/* Kiểu cho từng mục `fpItem` */
+.fpItem {
+  width: 100%; /* Đặt chiều rộng 100% để hiển thị đầy đủ trên màn hình nhỏ */
+  margin-bottom: 20px; /* Khoảng cách dưới mỗi mục */
+  background-color: #ffffff; /* Màu nền trắng cho các mục */
+  border-radius: 8px; /* Bo góc cho mục */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho mục */
+  overflow: hidden; /* Ẩn phần thừa ra ngoài khung */
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Hiệu ứng hover cho mục */
+
+/* Vùng hình ảnh bên trong `fpItem` */
+.fpItemImg {
+  width: 100%;
+  height: 180px;
+  overflow: hidden; /* Ẩn phần thừa của hình ảnh */
+}
+
+.fpItemImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ khung hình */
+}
+
+/* Tiêu đề khách sạn hoặc khu nghỉ dưỡng */
+.fpName {
+  font-size: 16px; /* Kích thước chữ cho tên */
+  font-weight: 700; /* Đậm chữ */
+  color: #333; /* Màu chữ */
+  margin: 3px 0px 5px 5px;
+}
+
+/* Tên thành phố */
+.fpCity {
+  font-size: 10px; /* Kích thước chữ cho tên thành phố */
+  color: #777; /* Màu chữ nhạt */
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+/* Xếp hạng và đánh giá */
+.fpRating {
+  display: flex; /* Hiển thị xếp hạng theo hàng ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 8px; /* Khoảng cách giữa các phần tử */
+}
+
+.fpRating .star {
+  padding: 4px 10px; /* Padding cho nút xếp hạng */
+  background-color: #0c969c; /* Màu nền cho nút */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Không viền */
+  border-radius: 5px; /* Bo góc cho nút */
+  font-size: 12px; /* Kích thước chữ cho nút */
+  margin-left: 5px;
+}
+
+.fpRating span {
+  font-size: 0.9em; /* Kích thước chữ cho đánh giá */
+  color: #555; /* Màu chữ cho đánh giá */
+}
+
+/* Giá */
+.fpPrice {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 8px;
+  margin-top: 20px;
+  color: #000; /* Màu chữ đen */
+}
+
+.fpPrice span {
+  font-size: 11px;
+  color: #555;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.fpPrice .price {
+  margin-left: 2px;
+  font-size: 15px;
+  font-weight: 700;
+}

@@ -1,0 +1,189 @@
+.signUpContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+input {
+  padding: 0 10px;
+}
+.signUpPanel {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+.getOutBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.getOutBtn svg {
+  cursor: pointer;
+  color: #333;
+}
+
+/* Tiêu đề đăng nhập */
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Text và link SignUp */
+.logInText {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.logInLink {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.socialButton {
+  margin-bottom: 1rem;
+}
+
+.googleLoginButton {
+  background-color: rgb(255, 62, 62);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.googleLoginButton:hover {
+  background-color: #ff1e1e;
+}
+
+.googleLoginText {
+  margin-left: 0.5rem;
+}
+
+p {
+  margin: 1rem 0;
+  color: #666;
+}
+
+.formSignUpContainer {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.formSignUp {
+  display: flex;
+  flex-direction: column;
+}
+
+.formSignUp input {
+  width: 98%;
+  height: 40px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.address-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.address-group select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.signUp-buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.signUp-buttonGroup button {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signUp-buttonGroup button[type="button"] {
+  background-color: #6c757d;
+  width: 100%;
+}
+
+.signUp-buttonGroup button[type="submit"] {
+  background-color: #28a745;
+  width: 100%;
+}
+
+.signUp-buttonGroup button:hover {
+  opacity: 0.9;
+}
+
+.formSignUp label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  display: block;
+}
+
+/* Back button styles */
+.backBtn {
+  margin-right: auto;
+  background-color: transparent; /* Transparent background */
+  color: black; /* White text */
+  border: none; /* No border */
+  padding: 8px 16px; /* Padding for a better clickable area */
+  font-size: 16px; /* Set font size */
+  border-radius: 4px; /* Slightly rounded corners */
+  cursor: pointer; /* Show pointer cursor */
+  margin-bottom: 15px; /* Margin below the button */
+  display: inline-block; /* Inline block for proper button layout */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.backBtn svg {
+  cursor: pointer;
+  color: #333;
+}
+.errorMessage {
+  color: red; /* Set the text color */
+  font-size: 14px; /* Adjust font size */
+  margin-top: 10px; /* Space above the error message */
+  font-weight: bold; /* Make the text bold */
+  /* Additional styles can be added as needed */
+  background-color: #f8d7da; /* Light background for visibility */
+  padding: 10px; /* Padding for better spacing */
+  border: 1px solid red; /* Red border to emphasize the error */
+  border-radius: 5px; /* Rounded corners */
+}

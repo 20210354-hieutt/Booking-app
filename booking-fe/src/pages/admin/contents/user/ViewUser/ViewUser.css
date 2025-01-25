@@ -1,0 +1,171 @@
+.single {
+  display: flex;
+  width: 100%;
+}
+.singleContainer {
+  flex: 6;
+}
+.singleContainer .top {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.singleContainer .top .left {
+  flex: 1;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+  position: relative;
+}
+.singleContainer .top .left .editButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 12px;
+  color: #7451f8;
+  background-color: #7551f818;
+  cursor: pointer;
+  border-radius: 0px 0px 0px 5px;
+}
+.singleContainer .top .left .item {
+  display: flex;
+  gap: 20px;
+}
+.singleContainer .top .left .item .itemImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.singleContainer .top .left .item .details .itemTitle {
+  margin-bottom: 10px;
+  color: #555;
+}
+.singleContainer .top .left .item .details .detailItem {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.singleContainer .top .left .item .details .detailItem .itemKey {
+  font-weight: bold;
+  color: gray;
+  margin-right: 5px;
+}
+.singleContainer .top .left .item .details .detailItem .itemValue {
+  font-weight: 300;
+}
+.singleContainer .top .right {
+  flex: 2;
+}
+.singleContainer .bottom {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+  margin: 10px 20px;
+}
+.singleContainer .title {
+  font-size: 16px;
+  color: lightgray;
+  margin-bottom: 20px;
+}
+/* Edit Button Styling */
+.singleContainer .top .left .editButton {
+  position: absolute;
+  top: 10px; /* Adjusted for better spacing */
+  right: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #7451f8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.singleContainer .top .left .editButton:hover {
+  background-color: #5b3dc9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Make the Form Scrollable */
+.singleContainer .top .left {
+  max-height: 80vh; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Add padding to avoid content cut-off by scrollbar */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #c4c4c4 transparent;
+}
+
+.singleContainer .top .left::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.singleContainer .top .left::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4; /* Scrollbar color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.singleContainer .top .left::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0; /* Hover effect for the scrollbar */
+}
+
+.singleContainer .top .left::-webkit-scrollbar-track {
+  background: transparent; /* Scrollbar track */
+}
+.singleContainer .top .left {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  max-height: 80vh; /* Maintain scrollable area */
+  overflow-y: auto;
+  padding-right: 10px; /* Avoid content cut-off by scrollbar */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #c4c4c4 transparent;
+}
+
+.singleContainer .top .left .item {
+  display: flex;
+  flex-direction: column; /* Stack avatar and name */
+  align-items: center; /* Center the avatar and name */
+  gap: 10px; /* Add spacing between avatar and name */
+  margin-bottom: 20px; /* Add space before details */
+}
+
+.singleContainer .top .left .item .itemImg {
+  width: 120px; /* Slightly larger avatar */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.singleContainer .top .left .item .itemTitle {
+  font-size: 20px; /* Emphasize name */
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* Center-align the name */
+}
+
+.singleContainer .top .left .details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between detail items */
+}
+
+.singleContainer .top .left .submitButton {
+  align-self: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add space between last form field and button */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.singleContainer .top .left .submitButton:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,4 @@
+node_modules/
+.env
+./be/src/config/
+./firebase-config.ts

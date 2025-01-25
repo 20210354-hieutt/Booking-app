@@ -1,0 +1,53 @@
+.headerLogin {
+  background-color: #0c969c; /* Màu nền của header */
+  padding: 1rem 2rem; /* Tạo khoảng cách padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng cho header */
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung của header */
+}
+
+/* Container chính của header */
+.headerLoginContainer {
+  display: flex;
+  justify-content: space-between; /* Tách logo và top-bar về hai phía */
+  align-items: center; /* Căn giữa theo trục dọc */
+  width: 100%;
+  max-width: 1200px; /* Giới hạn chiều rộng của header */
+}
+
+/* Định dạng cho logo */
+.logo {
+  font-size: 24px; 
+  font-weight: bold; 
+  padding-left: 0;
+  margin-left: 0;
+  color: white; /* Màu xanh của logo */
+  cursor: pointer; 
+  width: 200px;
+}
+
+/* Định dạng cho thanh top-bar */
+.top-bar {
+  display: flex;
+  align-items: center; /* Căn giữa theo trục dọc */
+  gap: 1.5rem; /* Khoảng cách giữa các thành phần */
+}
+
+/* Định dạng cho icon ngôn ngữ */
+.language img {
+  width: 30px; /* Kích thước icon ngôn ngữ */
+  height: 30px;
+  cursor: pointer; /* Con trỏ dạng chỉ tay khi hover */
+  border-radius: 100%;
+  margin-top: 3px;
+}
+
+/* Định dạng cho icon support */
+.support {
+  font-size: 15px; /* Kích thước icon support */
+  color: white; /* Màu của icon */
+  cursor: pointer; /* Con trỏ dạng chỉ tay khi hover */
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 4px 8px;
+}

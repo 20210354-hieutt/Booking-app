@@ -1,0 +1,108 @@
+.big-text {
+  font-family:
+    "Avenir Next",
+    BlinkMacSystemFont,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-weight: 700;
+  color: white;
+}
+/* PartnerDashboard.css */
+
+.containerr {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-containerr {
+  display: flex;
+  padding: 5% calc(23% + 5px);
+  justify-content: space-between;
+  background-color: #6ba3be;
+  width: 100%;
+}
+.register-block {
+  width: 40%;
+  background-color: white;
+  border: 6px solid rgb(255, 183, 0);
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.dashboard-text {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  width: 40%;
+}
+.list-option {
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  margin: 10px 0;
+}
+.icon {
+  color: green;
+  margin-right: 10px;
+}
+.register-block button {
+  background-color: #0c969c;
+  border: none;
+  font-weight: 600;
+  color: white;
+  margin-top: 30px;
+  width: 90%;
+  padding: 20px 0;
+  border-radius: 10px;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.register-block button:hover {
+  background-color: #0a7075;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.big-text {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Transition effect for changing words */
+.transition-text {
+  color: #0c969c;
+
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  animation: fade 5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

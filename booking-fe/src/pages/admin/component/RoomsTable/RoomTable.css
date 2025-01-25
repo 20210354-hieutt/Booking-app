@@ -1,0 +1,120 @@
+/* Container for the room table */
+.roomTableGridContainer {
+  height: 100%;
+  width: 100%;
+  overflow: auto; /* Enables scrolling if content overflows */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Blurred state when dialog is open */
+.roomTableGridContainer.blurred {
+  filter: blur(5px); /* Apply blur */
+  pointer-events: none; /* Disable interactions with blurred content */
+}
+
+/* Style for the DataGrid */
+.roomTableGrid {
+  height: 100%;
+  width: 100%;
+  min-width: 600px; /* Ensure a minimum width to prevent overflow */
+}
+
+/* Action Buttons */
+.roomCellAction {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* View Button Styles */
+.roomViewButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #1976d2; /* Blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.roomViewButton:hover {
+  background-color: #1565c0; /* Darker Blue */
+}
+
+/* Delete Button Styles */
+.roomDeleteButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.roomDeleteButton:hover {
+  background-color: darkred;
+}
+
+/* Capacity and Price Cell Styles */
+.roomCapacityCell,
+.roomPriceCell {
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Custom Scrollbar Styles (Optional) */
+
+/* For WebKit browsers (Chrome, Safari) */
+.roomTableGridContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.roomTableGridContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.roomTableGridContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.roomTableGridContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+.roomTableGridContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .roomTableGridContainer {
+    padding: 2px;
+  }
+
+  .roomCellAction {
+    gap: 10px;
+  }
+
+  .roomViewButton,
+  .roomDeleteButton {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  .roomCapacityCell,
+  .roomPriceCell {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+}

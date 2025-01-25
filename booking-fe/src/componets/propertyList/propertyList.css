@@ -1,0 +1,91 @@
+.pList {
+  padding: 10px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.pListItem {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.pListItem {
+  cursor: pointer;
+}
+.pListImg {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pListImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pListTitles {
+  padding: 10px;
+  text-align: start;
+}
+
+.pListTitles h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+/* Tùy chỉnh nút mũi tên tiếp theo */
+.swiper-button-next {
+  color: #fff; /* Đổi màu nút */
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ trong suốt */
+  border-radius: 50%; /* Bo góc để tạo hình tròn */
+  width: 40px; /* Đặt kích thước nút */
+  height: 40px;
+  display: flex; /* Căn giữa biểu tượng mũi tên */
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s; /* Hiệu ứng khi hover */
+  right: 0px;
+}
+
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Màu khi hover */
+}
+
+/* Tùy chỉnh nút mũi tên trước */
+.swiper-button-prev {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  left: 0px;
+}
+
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Tùy chọn: Di chuyển nút mũi tên ra ngoài khung slide */
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%; /* Căn giữa theo chiều dọc */
+  transform: translateY(-50%);
+}
+
+.swiper-button-next::after {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: 800;
+}

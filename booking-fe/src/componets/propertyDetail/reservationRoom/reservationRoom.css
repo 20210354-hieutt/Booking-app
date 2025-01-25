@@ -1,0 +1,174 @@
+.room-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.room-table th,
+.room-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.room-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.choices li {
+  list-style: none;
+}
+.reserveButton .reserve:hover {
+  background-color: #0a7075;
+}
+.table-responsive {
+  overflow-x: auto;
+}
+
+.ReservationForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation-details {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Align items in a row */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  max-width: 100%; /* Set a max width for the form */
+  padding: 10px; /* Add padding inside the form */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px;
+}
+
+.reservation-details label {
+  margin-right: 10px; /* Space between label and input */
+  font-weight: bold; /* Bold text for labels */
+  color: #333; /* Dark gray color for text */
+}
+
+.guestInput {
+  position: relative;
+  width: 25%;
+  height: 25%;
+}
+
+.numberOfGuestInput {
+  position: absolute;
+  z-index: 101;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.numberOfGuestInput-inputLabel {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 10%;
+}
+
+.numberOfGuestInput-inputLabel > input {
+  max-width: 50%;
+}
+
+.blockInput {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  z-index: 100;
+  background-color: #1a241a85;
+}
+
+.reservation-details input[type="date"],
+.reservation-details input[type="number"],
+.reservation-details input[type="text"],
+.guestInput {
+  flex: 1; /* Allow inputs to take available space */
+  padding: 8px; /* Padding inside inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  margin-right: 15px; /* Space between inputs */
+  font-size: 16px; /* Larger font size for readability */
+  background-color: white;
+}
+
+.checkIn-input {
+  flex: 1; /* Allow inputs to take available space */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  margin-right: 15px; /* Space between inputs */
+  font-size: 16px; /* Larger font size for readability */
+  background-color: white;
+}
+
+.reservation-details input[type="date"]:last-of-type,
+.reservation-details input[type="number"],
+.reservation-details input[type="text"],
+.guestInput :last-of-type {
+  margin-right: 0; /* Remove margin from the last input */
+}
+
+.dateInput {
+  position: relative;
+}
+
+.reservation-date {
+  position: absolute;
+  z-index: 101;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  top: 20px;
+  right: 50%;
+}
+
+.reservation-details .update {
+  padding: 10px 20px; /* Padding inside button */
+  background-color: #0c969c; /* Primary button color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Larger font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+  flex: 0 0 auto; /* Prevent button from stretching */
+  margin-left: 10px;
+}
+
+.reserveButton {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  right: 10px;
+  margin-top: 20px;
+}
+
+.ReservationForm .reserve {
+  padding: 10px 20px; /* Padding inside button */
+  background-color: #0c969c; /* Primary button color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Larger font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 50%;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+.update:hover {
+  background-color: #0a7075;
+}
+button[type="submit"]:hover {
+  background-color: #0a7075; /* Darker shade on hover */
+}
+
+button[type="submit"]:active {
+  background-color: #032f30; /* Even darker shade when clicked */
+}

@@ -1,0 +1,259 @@
+.property-list-page {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.property-table-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.property-table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.property-table th,
+.property-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.property-image-thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.tab-button {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.tab-button.active {
+  background-color: #0c969c;
+  color: white;
+}
+
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.property-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.property-description {
+  max-height: 110px;
+  overflow: hidden;
+  position: relative;
+}
+
+.property-description.expanded {
+  max-height: none;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.show-more {
+  color: #0c969c;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-align: right;
+  display: block;
+  margin-top: 5px;
+}
+.property-info {
+  padding: 16px;
+}
+
+.property-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.property-info p {
+  margin: 4px 0;
+  font-size: 0.9em;
+}
+
+.view-details-button,
+.delete-button,
+.save-property-button,
+.edit-button {
+  background-color: #0c969c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.edit-button {
+  background-color: green;
+}
+.delete-button {
+  background-color: #dc3545;
+}
+
+.view-details-button:hover,
+.delete-button:hover,
+.save-property-button:hover {
+  opacity: 0.9;
+}
+
+.property-add-edit {
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.button-group .button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.button-group .view-details-button {
+  background: linear-gradient(45deg, #0c969c, #0a7075);
+}
+
+.button-group .view-details-button:hover {
+  background: linear-gradient(45deg, #0a7075, #0c969c);
+}
+
+/* Nút Xóa */
+.button-group .delete-button {
+  background: linear-gradient(45deg, #ff4b5c, #d90000);
+}
+
+.button-group .delete-button:hover {
+  background: linear-gradient(45deg, #d90000, #ff4b5c);
+}
+
+/* Nút Chỉnh Sửa */
+.button-group .edit-button {
+  background: linear-gradient(45deg, #28a745, #1e7e34);
+}
+
+.button-group .edit-button:hover {
+  background: linear-gradient(45deg, #1e7e34, #28a745);
+}
+.table-header {
+  display: flex;
+  width: 70%;
+  margin-left: 16%;
+  margin-top: 50px;
+  height: 50px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 150px;
+  cursor: pointer;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+  width: 400px;
+}
+.search-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+.pagination-controls {
+  margin-left: 34%;
+  width: 100%;
+}
+/* Nút điều hướng phân trang */
+.pagination-controls button {
+  margin: 0 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0c969c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-controls button:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+.pagination-controls button:not(:disabled):hover {
+  background-color: #0a7075;
+}
+
+/* Nút đang hoạt động */
+.tab-button.active {
+  background-color: #0c969c;
+  color: white;
+  font-weight: bold;
+}

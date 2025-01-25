@@ -1,0 +1,219 @@
+.propertyDetail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.propertyDetail-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 90%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.propertyDetail-header {
+  width: 100%;
+}
+.propertyDetail-header p {
+  color: black;
+}
+.icon {
+  color: #006ce4;
+  height: 20px;
+}
+.propertyDetail-navigateBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.navigate-button {
+  background-color: white;
+  border: none;
+  padding: 16px 0;
+  width: 30%;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.propertyDetail-name {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.propertyDetail-name button {
+  background-color: #0c969c;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: white;
+  font-family:
+    BlinkMacSystemFont,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  height: 40px;
+  width: 90px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.propertyDetail-name button:hover {
+  background-color: #0a7075;
+}
+.selectedTab {
+  border-bottom: 2px solid #0c969c;
+}
+.navigate-button:hover {
+  background-color: rgba(26, 26, 26, 0.06);
+}
+.mini-map {
+  position: relative;
+  height: 300px;
+  width: 30%;
+  margin-bottom: -10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.mapContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.container-left-description {
+  width: 68%;
+}
+.propertyDetail-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  gap: 10px;
+}
+
+.propertyDetail-image img,
+.propertyDetail-image .placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: gray;
+}
+
+.propertyDetail-image .large {
+  grid-column: span 2;
+  grid-row: span 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #f0f0f0; /* Light gray for placeholders */
+}
+
+.propertyDetail-description {
+  width: 100%;
+  max-width: 100%;
+}
+.open-map-button {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  padding: 8px 16px;
+  background-color: #0c969c;
+  color: white;
+  z-index: 1000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.open-map-button:hover{
+  background-color: #0a7075;
+}
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+.model-contentt {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1001;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.circle-close-button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+  border: none;
+  background-color: white; /* White background */
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a floating effect */
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.circle-close-button:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.circle-close-button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.reservation-room {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.property-review {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.property-writeReview {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+}

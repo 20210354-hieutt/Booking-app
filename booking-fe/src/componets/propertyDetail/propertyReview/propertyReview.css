@@ -1,0 +1,221 @@
+.propertyReview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.overview-review {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.overview-review .avarage-point {
+  background-color: green;
+  aspect-ratio: 1;
+  height: 90%;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.overview-review .avarage-point > b {
+  color: white;
+}
+
+.overview-review > div {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  min-width: 40px;
+  margin-right: 10px;
+}
+
+.overview-review .numberOfReviews {
+  flex: 4;
+}
+
+.overview-review .rate {
+  margin-right: 10px;
+}
+.review-rating-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.review-comment-container {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.rating-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.review-comment {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  min-height: 200px;
+}
+
+.review-comment::-webkit-scrollbar {
+  display: none;
+}
+
+.review-comment-container > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  z-index: 1;
+  transition: opacity 0.2s;
+}
+
+.review-comment-container > button:hover {
+  opacity: 1;
+}
+
+.review-comment-container .left-button {
+  left: 0px;
+}
+
+.review-comment-container .right-button {
+  right: 0px;
+}
+
+.view-all-review-button {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.view-all-review-button:hover {
+  background-color: #218838;
+}
+
+.view-all-review-button:active {
+  background-color: #1e7e34;
+}
+
+.all-reviews {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.allReviews-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+}
+
+.allReviews-topSection {
+  flex: 1;
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.allReviews-topSection > h4 {
+  max-width: 50%;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.allReviews-filter-sort {
+  flex: 2;
+  margin: 10px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.allReviews-filter {
+  flex: 2;
+}
+
+.allReviews-filter .filter-dropdown {
+  display: flex;
+  flex-direction: row;
+}
+
+.allReviews-filter .filter-dropdown > div {
+  margin: 10px;
+}
+
+.allReview-sorting {
+  flex: 2;
+}
+
+.allReviews-sorting > .sorting-dropdown {
+  display: flex;
+  flex-direction: row;
+}
+
+.allReviews-sorting > .sorting-dropdown > div {
+  margin: 10px;
+}
+
+.allReviews-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  min-width: 100%;
+}
+
+.review-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

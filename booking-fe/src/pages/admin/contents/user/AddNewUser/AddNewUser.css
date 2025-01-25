@@ -1,0 +1,98 @@
+.new {
+  width: 100%;
+  display: flex;
+  overflow: auto; /* Allow horizontal and vertical scrolling if needed */
+}
+
+.newContainer {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.newContainer .top,
+.newContainer .bottom {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+.newContainer .top h1,
+.newContainer .bottom h1 {
+  color: lightgray;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.newContainer .bottom {
+  overflow-y: auto; /* Enable vertical scrolling for the form section */
+  max-height: calc(
+    100vh - 100px
+  ); /* Adjust the height dynamically based on viewport */
+}
+
+.newContainer .top .left,
+.newContainer .bottom .left {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.newContainer .top .left img,
+.newContainer .bottom .left img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.newContainer .top .right,
+.newContainer .bottom .right {
+  flex: 2;
+  width: 100%; /* Ensure full width for the form */
+}
+
+.newContainer .top .right form,
+.newContainer .bottom .right form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between; /* Spread form inputs evenly */
+  max-width: 100%; /* Prevent the form from exceeding the container width */
+}
+
+.newContainer .top .right form .formInput,
+.newContainer .bottom .right form .formInput {
+  width: calc(50% - 15px); /* Make input fields responsive */
+}
+
+.newContainer .top .right form .formInput label,
+.newContainer .bottom .right form .formInput label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.newContainer .top .right form .formInput input,
+.newContainer .bottom .right form .formInput input,
+.newContainer .bottom .right form .formInput select {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.newContainer .top .right form button,
+.newContainer .bottom .right form button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}

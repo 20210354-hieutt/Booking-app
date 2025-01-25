@@ -1,0 +1,49 @@
+.partnerRequestGrid {
+  height: 100%;
+  width: 100%;
+}
+
+.cellAction {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* .cellAction .viewButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #1976d2; 
+  color: white;
+  border: 1px dotted rgba(25, 118, 210, 0.6);
+  cursor: pointer;
+}
+
+.cellAction .viewButton:hover {
+  background-color: #1565c0;
+} */
+
+.cellAction .acceptButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: rgba(41, 165, 41, 0.96);
+  color: white;
+  border: 1px dotted rgba(0, 0, 139, 0.596);
+  cursor: pointer;
+}
+
+.cellAction .acceptButton:hover {
+  background-color: rgba(41, 165, 41, 1);
+}
+
+.cellAction .declineButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  border: 1px dotted rgba(220, 20, 60, 0.6);
+  cursor: pointer;
+}
+
+.cellAction .declineButton:hover {
+  background-color: darkred;
+}

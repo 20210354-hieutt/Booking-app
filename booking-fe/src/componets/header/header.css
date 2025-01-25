@@ -1,0 +1,295 @@
+.header {
+  background-color: #0c969c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-left: 23%;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0 100px 0;
+}
+
+.headerContainer .listMode {
+  margin: 20px 0 0px 0;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.headerListItem {
+  display: flex;
+  background-color: #6ba3be;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.headerTitle {
+  font-weight: 800;
+  list-style: 62px;
+  font-size: 48px;
+}
+.headerDesc {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 32px;
+  color: white;
+}
+
+.headerBtn {
+  background-color: #274d60;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.headerSearch {
+  height: 50px;
+  background-color: white;
+  border: 5px solid #febb02;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%; /* Đưa phần tử vào giữa theo chiều ngang */
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1024px;
+  z-index: 1000;
+}
+
+.headerIcon {
+  color: rgb(93, 93, 93);
+  font-size: 20px;
+}
+
+.headerSearchItem {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+  height: 40px;
+}
+
+.headerSearchItem.iconBed {
+  padding-left: 10px;
+  padding-right: 80px;
+  border-right: 5px solid #febb02;
+  height: 40px;
+}
+
+.headerSearch .iconCalendar {
+  padding-left: 10px;
+  padding-right: 20px;
+  border-right: 5px solid #febb02;
+  width: 280px;
+  height: 40px;
+}
+
+.headerSearch .iconUser {
+  padding-left: 10px;
+  padding-right: 20px;
+  border-right: 5px solid #febb02;
+  height: 40px;
+  width: 280px;
+}
+
+.headerSearch .btn {
+  width: 108px;
+  padding: 0;
+}
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  font-size: 14px;
+
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 46px;
+  z-index: 10;
+}
+
+.options {
+  z-index: 10;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  max-width: 230px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+  border: 2px solid #868686;
+  border-radius: 4px;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  color: #65a5ff;
+}
+
+.optionCounterButton:hover {
+  background-color: #e2efff;
+}
+
+.optionCounter span {
+  font-size: 15px;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+.childrenAge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 12px;
+  gap: 5px;
+}
+
+.childAge {
+  display: flex;
+  align-items: center; /* Căn giữa dọc cho nội dung */
+  justify-content: space-between; /* Căn đều khoảng cách giữa các phần tử */
+}
+
+.selectAge {
+  padding: 5px; /* Thêm khoảng cách bên trong cho dropdown */
+  font-size: 12px; /* Kích thước chữ cho dropdown */
+  border: 1px solid #ccc; /* Đường viền cho dropdown */
+  border-radius: 5px; /* Bo tròn các góc */
+  width: 100%; /* Chiều rộng của dropdown chiếm 100% */
+  max-width: 200px; /* Chiều rộng tối đa cho dropdown */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển đổi cho đường viền */
+}
+
+.selectAge:focus {
+  border-color: #007bff; /* Đổi màu đường viền khi focus */
+  outline: none; /* Bỏ outline mặc định */
+}
+
+/* Đổi màu nền cho option mặc định */
+.selectAge option[value="-1"] {
+  color: #999; /* Màu chữ cho option mặc định */
+}
+.headerSearchContainer {
+  position: relative;
+  width: 300px;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.headerIcon {
+  margin-right: 8px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.suggestionsDropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 32%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestionsDropdown .suggestionsTitle {
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+.suggestionItem {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.suggestionItem:hover {
+  background-color: #f0f0f0;
+  transform: translateX(5px);
+}
+
+.suggestionIcon {
+  margin-right: 10px;
+  color: #0c969c;
+}
+
+.suggestionName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.suggestionText {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,384 @@
+.payment {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.paymentContainer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 15px;
+}
+
+.leftContent {
+  flex: 3;
+  padding: 2px;
+  border-radius: 10px;
+  top: 10px;
+  height: max-content;
+}
+
+.bookingInformation {
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.bookingInformation h3 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.address {
+  font-size: 14px;
+}
+
+.bookingInformation > span {
+  color: #008234;
+  font-size: 13px;
+}
+
+.infoEvaluation {
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.infoRating {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.infoComment {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.infoReview {
+  font-size: 13px;
+  color: gray;
+}
+
+.infoScore {
+  background-color: #003b95;
+  padding: 2px 4px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: baseline;
+  width: 28px;
+  height: 28px;
+}
+
+.infoExtra {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.iconWifi {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.wifi > span {
+  font-size: 12px;
+}
+
+.iconPlane {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.airport > span {
+  font-size: 12px;
+}
+
+.bookingDetails {
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.bookingDetails h3 {
+  font-size: 18px;
+  margin: 8px 0px;
+}
+
+.timeBooking {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+
+.checkInTime,
+.checkOutTime {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.checkIn {
+  padding-right: 5px;
+  border-right: 1px solid #e7e7e7;
+}
+
+.checkInFrom,
+.checkOutUntil {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.lengthStay {
+  margin-top: 8px;
+}
+
+.lengthStayTitle {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.lengthStay > .totalNight {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 10px;
+}
+
+.selectedTitle {
+  font-size: 15px;
+}
+
+.mySelected {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.changeSelection {
+  margin-top: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+  color: #006ce4;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.changeSelection:hover {
+  background-color: #d8e7fc;
+}
+
+.priceSummary {
+  padding: 10px 0px;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  margin: 10px 0px;
+}
+
+.priceSummary > h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebf3fe;
+  padding: 30px 8px;
+}
+
+.textLeft,
+.textRight {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightContent {
+  flex: 7;
+}
+
+.signIninfor {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.signIninfor > .img {
+  border: 3px solid #2ebcef;
+  padding: 10px 12px;
+  border-radius: 50%;
+}
+
+.iconUser {
+  color: #2ebcef;
+}
+
+.information > .text {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.information > .email {
+  font-size: 15px;
+  color: #595959;
+  font-size: 300;
+}
+
+.yourDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.yourDetails h3 {
+  margin-top: 8px;
+  margin-left: 25px;
+  font-size: 22px;
+}
+
+.yourDetails .alert {
+  display: flex;
+  gap: 15px;
+  padding: 14px 14px;
+  border: 1px solid #333;
+  margin-top: 20px;
+  margin-left: 25px;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.alert .iconInfo {
+  font-size: 12px;
+  border: 2px solid #333;
+  padding: 4px 5px;
+  border-radius: 50%;
+}
+
+.alert .required {
+  color: #e2240f;
+  font-weight: bold;
+  margin-left: 0px;
+}
+
+.alert .yourAlert {
+  font-size: 14px;
+  color: #595959;
+  font-size: 14px;
+}
+
+.formInput {
+  max-width: 500px;
+  margin: 20px 5px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.formInput label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.formInput .required {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.formInput input,
+.formInput select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.formInput input:focus,
+.formInput select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+.formInput .form-control-comment {
+  margin-top: 5px;
+}
+
+.formInput .country {
+  appearance: none; /* Loại bỏ style mặc định */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat right 10px center;
+  background-color: #ffffff;
+  background-size: 18px;
+}
+
+.formInput select {
+  padding-right: 30px; /* Khoảng trống cho mũi tên */
+}
+
+.errorMessage {
+  color: red; /* Set the text color */
+  font-size: 14px; /* Adjust font size */
+  margin-top: 10px; /* Space above the error message */
+  font-weight: bold; /* Make the text bold */
+  /* Additional styles can be added as needed */
+  background-color: #f8d7da; /* Light background for visibility */
+  padding: 10px; /* Padding for better spacing */
+  border: 1px solid red; /* Red border to emphasize the error */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.formInput .btnSub {
+  padding: 12px 15px;
+  font-size: 16px;
+  background-color: #3498db;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formInput .btnSub:hover {
+  background-color: #2980b9;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: flex-end;
+}

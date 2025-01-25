@@ -1,0 +1,88 @@
+.userTableGridContainer {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.userTableGrid {
+  height: 100%;
+  width: 100%;
+}
+
+.cellAction {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* View Button Styles */
+.cellAction .viewButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #1976d2;
+  color: white;
+  border: 1px dotted rgba(25, 118, 210, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cellAction .viewButton:hover {
+  background-color: #1565c0;
+}
+
+.cellAction .editButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #ffa726;
+  color: white;
+  border: 1px dotted rgba(255, 167, 38, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cellAction .editButton:hover {
+  background-color: #fb8c00;
+}
+
+.cellAction .deleteButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  border: 1px dotted rgba(220, 20, 60, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cellAction .deleteButton:hover {
+  background-color: darkred;
+}
+
+.cellWithRole {
+  padding: 4px 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cellWithRole.Admin {
+  color: rgba(255, 87, 34, 0.8); /* Orange */
+}
+
+.cellWithRole.Member {
+  color: rgba(33, 150, 243, 0.8); /* Blue */
+}
+
+.cellWithRole.Partner {
+  color: rgba(0, 200, 83, 0.8); /* Green */
+}
+
+.userTableGridContainer.blurred {
+  position: relative;
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.userTableGridContainer {
+  transition: filter 0.3s ease-in-out;
+}

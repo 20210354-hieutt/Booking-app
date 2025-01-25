@@ -1,0 +1,96 @@
+.bookingTableGridContainer {
+  height: 100%;
+  width: 100%;
+  overflow: auto; /* Enables scrolling if content overflows */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Blurred state when dialog is open */
+.bookingTableGridContainer.blurred {
+  filter: blur(5px); /* Apply blur */
+  pointer-events: none;
+}
+
+/* Style for the DataGrid */
+.bookingTableGrid {
+  height: 100%;
+  width: 100%;
+}
+
+/* Action Buttons */
+.bookingCellAction {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Delete Button Styles */
+.bookingDeleteButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  border: 1px dotted rgba(220, 20, 60, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: bold; /* Make button text bold */
+  border: none; /* Remove default button border */
+  outline: none; /* Remove default button outline */
+}
+
+.bookingDeleteButton:hover {
+  background-color: darkred;
+}
+
+/* Role Indicator Styles */
+.bookingCellWithRole {
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold; /* Make the text thick */
+  color: white; /* Default text color */
+}
+/* Edit Button Styles */
+.bookingEditButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #4caf50; /* A green color for edit */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: bold; /* Make button text bold */
+  border: none; /* Remove default button border */
+  outline: none; /* Remove default button outline */
+}
+
+.bookingEditButton:hover {
+  background-color: #3e8e41; /* A darker green on hover */
+}
+.bookingCellWithRole {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Role Specific Styles */
+.bookingCellWithRole.Pending {
+  color: rgba(255, 128, 1, 0.8); /* Amber for Pending */
+}
+
+.bookingCellWithRole.Completed {
+  color: rgba(40, 167, 69, 0.8); /* Green for Confirmed */
+}
+
+.bookingCellWithRole.Canceled {
+  color: rgba(220, 53, 69, 0.8); /* Red for Cancelled */
+}
+
+.bookingCellWithRole.Unpaid {
+  color: rgba(220, 53, 69, 0.8); /* Red for Unpaid */
+}
+
+.bookingCellWithRole.Paid {
+  color: rgba(40, 167, 69, 0.8); /* Green for Paid */
+}

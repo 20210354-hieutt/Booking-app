@@ -1,0 +1,224 @@
+.partner-booking-detail-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.partner-booking-detail-container-left {
+  padding-top: 20px;
+  padding-right: 10px;
+  background-color: #ffffff;
+}
+
+
+.partner-booking-detail-container-right {
+  padding-top: 20px;
+  padding-left:10px;
+  background-color: #ffffff;
+}
+.customer-detail {
+  padding:16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+.partner-booking-detail-container-left p {
+  font-weight: 600;
+}
+
+.image-thumbnail {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.complete-color {
+  color: green;
+}
+.cancel-color {
+  color: red;
+}
+.pending-color {
+  color: rgb(138, 138, 0);
+}
+.property-detail-information {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 16px;
+  display: flex;
+  max-width: 500px;
+  gap: 15px;
+}
+.property-detail-night {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 16px;
+}
+p {
+  color: black;
+}
+.check-in-check-out {
+  display: flex;
+  justify-content: space-between;
+}
+.check-in {
+  border-right: 1px solid black;
+  width: 50%;
+}
+.property-detail-rate {
+  display: flex; /* Hiển thị xếp hạng theo hàng ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 8px; /* Khoảng cách giữa các phần tử */
+
+}
+.rate-number {
+  padding: 4px 8px ; /* Padding cho nút xếp hạng */
+  background-color: #0c969c; /* Màu nền cho nút */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Không viền */
+  border-radius: 5px; /* Bo góc cho nút */
+  font-size: 13px; /* Kích thước chữ cho nút */
+  
+}
+
+.property-detail-rate span {
+  font-size: 0.9em; /* Kích thước chữ cho đánh giá */
+  color: #555; /* Màu chữ cho đánh giá */
+}
+.check-out {
+  width: 50%;
+  padding-left: 12%;
+}
+.selection-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selection-summary p {
+  margin: 0; /* Xóa margin của đoạn text */
+  flex: 1; /* Để chiếm không gian còn lại */
+  font-size: 16px;
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #007bff; /* Màu sắc icon */
+}
+
+/* Smooth expand/collapse container */
+.room-names {
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Thời gian chuyển đổi */
+  max-height: 0; /* Mặc định là 0 khi collapse */
+}
+
+.room-names.expanded {
+  max-height: 500px; /* Chiều cao tối đa khi mở */
+}
+.total-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.total-price-container .title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.total-price-container h2 {
+  font-size: 32px;
+}
+
+.property-detail-name {
+  font-size: 18px; /* Kích thước chữ cho tên */
+  font-weight: 700; /* Đậm chữ */
+  color: #333; /* Màu chữ */
+  margin: 3px 0px 5px 0px;
+}
+
+.property-detail-address {
+  margin-top: 3px;
+  margin-bottom:15px;
+  color: #565656;
+  font-size:15px;
+  
+}
+
+.property-detail-night .checkIn{
+  padding-right:20px;  
+  border-right: 2px solid #e3e3e3 ;
+}
+
+.property-detail-night .checkOut {
+  margin-left: 10px;
+}
+
+.property-detail-night .checkInTitle{
+  font-size: 20px;
+}
+
+.property-detail-night .checkOutTitle {
+  font-size: 20px;
+}
+
+.property-detail-night .checkInTime  {
+  font-size: 20px;
+}
+
+.property-detail-night .checkOutTime {
+  font-size: 20px;
+}
+
+
+.property-detail-night .checkInFrom, .checkOutUntil {
+  font-size: 17px;
+}
+
+.property-detail-night .checkOutUntil {
+  font-size: 17px;
+}
+
+.property-detail-night .lengthStay {
+  padding-bottom: 15px;
+  
+}
+
+.property-detail-night .lengthStayTitle {
+  font-size: 18px;
+}
+.property-detail-night .totalNight {
+  font-size:16px;
+  border-bottom:1px solid #e3e3e3;
+  padding-bottom: 20px;
+}
+
+.cancelBookingBtn {
+  background-color: #ff4d4f; /* Màu đỏ nổi bật */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Loại bỏ viền */
+  border-radius: 5px; /* Bo góc nhẹ */
+  padding: 10px 20px; /* Khoảng cách trong nút */
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: bold; /* Chữ đậm */
+  cursor: pointer; /* Hiển thị con trỏ khi hover */
+  transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+
+.cancelBookingBtn:hover {
+  background-color: #e60023; /* Đổi màu đậm hơn khi hover */
+}
+
+

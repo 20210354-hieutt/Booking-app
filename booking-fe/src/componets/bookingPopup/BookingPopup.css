@@ -1,0 +1,81 @@
+.popup-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 400px; /* Chiều rộng phù hợp */
+  color: white;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 999;
+  background-color: #2c2c2c;
+}
+
+.popup-contentt {
+  position: relative;
+  display: flex;
+  width: 500px;
+  height: 400px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.popup-body {
+  align-items: center;
+  display: flex;
+  width: 500px;
+  margin: -20px;
+  margin-bottom: 100px;
+
+  background-color: #2c2c2c;
+}
+
+.popup-thumbnail {
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  margin-left: 30px;
+}
+
+.popup-info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.popup-info h3 {
+  font-size: 13px;
+  margin: 0 0 5px;
+  color: #ffffff;
+}
+
+.popup-info p {
+  font-size: 11px;
+  color: #a0a0a0;
+}
+
+.popup-info .price {
+  font-size: 12px;
+  color: #00bcd4;
+}
+
+.close-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: none;
+  border: none;
+  color: white;
+  width: 10%;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 70%;
+}
+.popup-contentt button{
+  background-color: #0c969c;
+}
+.popup-contentt button:hover{
+  background-color: #0a7075;
+}

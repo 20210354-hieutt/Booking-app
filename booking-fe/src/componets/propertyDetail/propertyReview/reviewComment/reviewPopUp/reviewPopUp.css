@@ -1,0 +1,14 @@
+.reviewPopUp-container {
+  position: fixed; /* Fix the position to the viewport */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the element to be exactly centered */
+  z-index: 5000; /* Optional: ensure it appears above other content */
+  background-color: white;
+  border: 0px solid #ccc; /* Optional: border */
+  padding: 20px; /* Optional: padding inside the div */
+  max-width: 700px;
+}

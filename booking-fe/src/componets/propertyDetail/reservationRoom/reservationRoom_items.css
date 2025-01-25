@@ -1,0 +1,58 @@
+.roomName {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #0c969c;
+}
+
+.roomName .name {
+  font-weight: bold;
+  color: #0c969c;
+
+}
+.roomDropdown {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+
+.selectedRoom {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.numberRoomDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.roomItem.disabled {
+  color: #ccc;
+  pointer-events: none;
+  background-color: #f0f0f0;
+}
+.roomItem {
+  padding: 8px;
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.roomItem:hover {
+  background-color: #f0f0f0;
+}
+
+.roomItem:last-child {
+  border-bottom: none;
+}

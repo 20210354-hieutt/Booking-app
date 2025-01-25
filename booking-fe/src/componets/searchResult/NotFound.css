@@ -1,0 +1,10 @@
+.not-found-container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin-top: 10%;
+}
+.not-found-icon {
+  font-size: 50px;
+}

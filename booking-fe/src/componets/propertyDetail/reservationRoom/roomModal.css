@@ -1,0 +1,137 @@
+/* Overlay styling */
+.modalRoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures it appears above other elements */
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+
+/* Modal container */
+.modalRoom-content {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Inner padding */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  width: 80%; /* Responsive width */
+  max-width: 1200px; /* Maximum width */
+  display: flex; /* Flexible layout */
+  flex-direction: column; /* Stack child elements */
+  position: relative; /* For close button positioning */
+  overflow-y: auto; /* Scrollable if content overflows */
+  max-height: 80%; /* Prevent modalRoom from exceeding screen height */
+}
+
+/* Header section */
+.modalRoom-content h2 {
+  font-size: 24px;
+  color: #333333; /* Dark text */
+  margin-bottom: 20px; /* Spacing below title */
+  font-weight: bold;
+  text-align: center; /* Center align the title */
+}
+
+/* Close button */
+.modalRoom-content .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modalRoom-content .close button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px; /* Larger size */
+  cursor: pointer;
+  color: #999999; /* Grey color */
+  transition: color 0.2s;
+}
+
+.modalRoom-content .close button:hover {
+  color: #333333; /* Darker color on hover */
+}
+
+/* Parent div holding image and info */
+.modalRoom-content > div {
+  display: flex;
+  flex-direction: row; /* Align children side by side */
+  gap: 20px; /* Add spacing between the image and info sections */
+  justify-content: space-between; /* Space out the content */
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Image section */
+.modalRoom-content .image {
+  flex: 1; /* Take equal space as info */
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center;
+  max-width: 50%; /* Image section takes half of the width */
+  padding-right: 50px;
+}
+
+.modalRoom-content .image img {
+  max-width: 100%;
+  border-radius: 10px; /* Rounded corners for the image */
+  object-fit: cover; /* Ensure image maintains aspect ratio */
+}
+
+/* Information section */
+.modalRoom-content .info {
+  flex: 1; /* Allow the info section to take up more space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Information table */
+.info-table {
+  width: 100%;
+  border-collapse: collapse; /* Removes table spacing */
+  margin-bottom: 20px; /* Space below table */
+}
+
+.info-table td {
+  padding: 10px 15px; /* Padding for cells */
+  vertical-align: top; /* Align text at the top */
+}
+
+.info-table td:first-child {
+  text-align: left; /* Left align */
+  width: 35%; /* Adjust column width */
+}
+
+.info-table td:last-child {
+  text-align: left; /* Left align */
+  color: #555555; /* Grey text */
+}
+
+/* Lower price highlight */
+.lowerPrice-text {
+  color: green; /* Highlighted text in green */
+  font-weight: bold;
+}
+
+/* Facilities section */
+h4 {
+  font-size: 20px;
+  color: #333333; /* Darker text */
+  margin-bottom: 10px; /* Spacing below heading */
+}
+
+ul {
+  list-style-type: disc; /* Bullet points */
+  padding-left: 20px; /* Indentation for list */
+  margin: 0;
+}
+
+ul li {
+  font-size: 16px;
+  color: #555555; /* Grey text */
+  margin-bottom: 5px; /* Space between items */
+}

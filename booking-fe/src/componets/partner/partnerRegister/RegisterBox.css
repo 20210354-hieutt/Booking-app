@@ -1,0 +1,128 @@
+.containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.content-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.continue-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+  background-color: #005fa3;
+}
+
+.divider {
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.help-text {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #0071c2;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 12px;
+  color: #0071c2;
+  border: 1px solid #0071c2;
+  background-color: transparent;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #e6f0fa;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.footer-text .link {
+  margin-left: 4px;
+  color: #0071c2;
+  text-decoration: none;
+}
+
+.footer-text .link:hover {
+  text-decoration: underline;
+}

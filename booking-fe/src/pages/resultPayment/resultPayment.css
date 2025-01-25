@@ -1,0 +1,64 @@
+.resultPayment {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resultPayment h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.transactionInfoTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.transactionInfoTable th,
+.transactionInfoTable td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.transactionInfoTable th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.transactionInfoTable td {
+  background-color: #fff;
+}
+
+.transactionInfoTable tbody tr:nth-child(odd) td {
+  background-color: #f8f8f8;
+}
+
+.resultPayment button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.resultPayment button:hover {
+  background-color: #0056b3;
+}
+
+.resultPayment button:active {
+  background-color: #003f88;
+}

@@ -1,0 +1,129 @@
+.headerAccountContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.userName-account {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.listProperty {
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 30px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.listProperty:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.signOutButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.signOutButton:hover {
+  background-color: #ff1a1a;
+}
+.notification-wrapperr {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.notification-iconn {
+  font-size: 20px;
+}
+.notification-itemm {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition:
+    background-color 0.3s,
+    font-weight 0.3s;
+}
+.admin-icon {
+  margin-right: 25px;
+  cursor: pointer;
+}
+.notification-item.unreadd {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.notification-item.readd {
+  background-color: white;
+  font-weight: normal;
+}
+.notification-itemm p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.notification-itemm small {
+  color: #666;
+  font-size: 12px;
+}
+
+.mark-readd {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.notification-badgee {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  height: 20px;
+}
+.notification-dropdownn {
+  position: absolute;
+  top: -110px;
+  left: 58%;
+  background-color: white;
+  color: black;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1001;
+}
+
+.dropdown-headerr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+.mark-all-readd {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+}

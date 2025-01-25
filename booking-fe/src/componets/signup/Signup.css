@@ -1,0 +1,90 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.signup-box {
+  display: none;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.social-signup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.social-btn {
+  flex: 1;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #db4437;
+  color: white;
+}
+
+.facebook-btn {
+  background-color: #4267b2;
+  color: white;
+}
+
+.github-btn {
+  background-color: #333;
+  color: white;
+}
+
+.feide-btn {
+  background-color: #00549e;
+  color: white;
+}
+
+.or-divider {
+  margin: 1rem 0;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-container label {
+  margin-left: 0.5rem;
+}
+
+.signup-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #218838;
+}

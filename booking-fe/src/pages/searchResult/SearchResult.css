@@ -1,0 +1,232 @@
+.search-result-container {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  margin-left: 20%;
+}
+.search-container-left {
+  z-index: 1px;
+}
+.map-container {
+  width: 90%;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.main-content {
+  width: 70%;
+}
+
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.headerSearchInput {
+  height: 20px;
+}
+.header-search h1 {
+  font-size: 24px;
+}
+
+.sort-button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.filter-bar {
+  margin-top: 20px;
+  width: 300px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.filter-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.filter-section label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: pointer;
+  padding-left: 0;
+}
+.filter-section input[type="radio"] {
+  margin-right: 10px;
+  flex-shrink: 0;
+  background-color: red;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+.filter-group h4 {
+  margin-bottom: 5px;
+}
+.fix-width input {
+  width: 20px;
+}
+.results-list {
+  width: 100%;
+}
+
+.room-details {
+  list-style: none;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.green-text {
+  color: green;
+}
+
+.price-info {
+  font-size: 16px;
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.availability-button {
+  background-color: #0c969c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.reviews {
+  color: #555;
+}
+
+.review-count {
+  font-size: 12px;
+  color: #888;
+}
+.show-on-map-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 75px;
+  z-index: 900;
+  padding: 10px 20px;
+  background-color: #0c969c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.show-on-map-btn:hover {
+  background-color: #0a7075;
+}
+
+/* Popup Map */
+.popup-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.popup-map-content {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-popup-map {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2000;
+  padding-bottom: 7px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-popup-map:hover {
+  background-color: #d43f3a;
+}
+.range-slider {
+  width: 100%;
+  padding: 20px;
+}
+
+.range-slider h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.pagination-controls button {
+  background-color: #0c969c;
+}
+.pagination-controls button:hover{
+  background-color: #0a7075;
+}

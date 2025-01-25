@@ -1,0 +1,157 @@
+.budget {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.budgetTitle > span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pricingMode {
+  display: flex;
+  justify-content: center;
+  padding: 3px 7px;
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  gap: 5px;
+  width: max-content;
+}
+
+.btnPN,
+.btnES {
+  border-radius: 15px;
+  padding: 7px 23px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.pricingMode .active {
+  border: 1px solid #868686;
+  background-color: #fff;
+}
+
+.filterPrice {
+  margin-top: 5px;
+  padding: 0 3px 2px 3px;
+}
+
+.status > span {
+  font-size: 14px;
+}
+
+.histogram {
+  margin-top: 8px;
+  display: flex;
+  height: 60px;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.histogram > span {
+  background: #e7e7e7;
+  border-radius: 4px 4px 0 0;
+  width: 4px;
+}
+
+.slider {
+  width: 100%;
+  height: 3px;
+  background-color: #006ce4;
+  margin-top: 1px;
+}
+
+.slider .thumb {
+  width: 15px;
+  height: 15px;
+  cursor: grab;
+  background-color: #006ce4;
+  border-radius: 50%;
+  border: none;
+  top: -6px;
+  outline: none;
+}
+
+.slider .track-0 {
+  height: 3px;
+  background-color: #e7e7e7;
+}
+
+.slider .track-2 {
+  height: 3px;
+  background-color: #e7e7e7;
+}
+
+.filterGroup {
+  padding: 12px 16px 8px 12px;
+}
+
+.fgTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.fgContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.condition {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none; /* Ẩn checkbox mặc định */
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid #868686;
+  position: relative;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.condition .text {
+  font-size: 13px;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkbox:checked + .checkmark {
+  background-color: #006ce4;
+}
+
+.checkbox:checked + .checkmark::after {
+  opacity: 1;
+}
+
+.numRes {
+  font-size: 13px;
+}

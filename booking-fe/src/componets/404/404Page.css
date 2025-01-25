@@ -1,0 +1,89 @@
+/* Error10.css */
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 6px;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .error-container {
+    padding: 20px 24px;
+    flex-direction: row;
+    gap: 28px;
+  }
+}
+
+.error-image {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .error-image {
+    width: 50%;
+  }
+}
+
+.hidden-lg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hidden-lg {
+    display: block;
+  }
+}
+
+.text-header {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1f2937;
+  padding-top: 16px;
+}
+
+@media (min-width: 1024px) {
+  .text-header {
+    font-size: 4rem;
+  }
+}
+
+.text-paragraph {
+  font-size: 1rem;
+  color: #1f2937;
+  padding-top: 16px;
+}
+
+.button {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 20px 16px;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+@media (min-width: 1024px) {
+  .button {
+    width: auto;
+  }
+}
+
+.button:hover {
+  background-color: #4338ca;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5);
+}

@@ -1,0 +1,58 @@
+.recent-research {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-research .title {
+  margin-bottom: 10px;
+}
+
+.list-recent-research {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Thêm box-shadow */
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  justify-content: flex-start;
+  width: 100%;
+  cursor: pointer;
+}
+
+.item-img img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-subtitle {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 4px;
+}

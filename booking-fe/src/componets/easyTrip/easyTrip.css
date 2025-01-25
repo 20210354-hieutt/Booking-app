@@ -1,0 +1,85 @@
+.easyTrip {
+  width: 100%;
+  max-width: 1024px;
+  height: 200px;
+}
+
+.typeTripList {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.typeTripItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.typeTripItem span {
+  font-size: 15px;
+}
+
+.typeTripItem.active {
+  border: 1px solid rgb(63, 198, 243);
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(230, 250, 253);
+}
+
+.typeTripItem.active span {
+  color: rgb(41, 153, 244);
+}
+
+.typeTripItem.active .icon {
+  color: rgb(41, 153, 244);
+}
+
+.locationList {
+  display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử */
+  justify-content: space-between; /* Căn chỉnh các phần tử giữa các hàng */
+  gap: 15px;
+  height: 300px;
+}
+.swiper {
+  width: 100%;
+}
+
+.locationItem {
+  width: 100%; /* Đặt chiều rộng 100% để hiển thị đầy đủ trên màn hình nhỏ */
+  margin-bottom: 20px; /* Khoảng cách dưới mỗi mục */
+  background-color: #ffffff; /* Màu nền trắng cho các mục */
+  border-radius: 8px; /* Bo góc cho mục */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho mục */
+  overflow: hidden; /* Ẩn phần thừa ra ngoài khung */
+  padding-bottom: 10px;
+  height: 95%;
+  cursor: pointer;
+}
+
+.locationItemImg img {
+  width: 100%;
+  height: 200px; 
+}
+
+.locationItemTitle {
+  padding: 10px; /* Thêm khoảng cách bên trong */
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.locationItemTitle h3 {
+  margin: 0; /* Xóa margin mặc định */
+  font-size: 15px; /* Kích thước font cho tiêu đề */
+  color: #333; /* Màu sắc cho tiêu đề */
+}
+
+.locationItemTitle div {
+  font-size: 12px; /* Kích thước font cho khoảng cách */
+  color: #777; /* Màu sắc cho khoảng cách */
+}
+
+.swiper-slide {
+  padding-bottom: 5px;
+}

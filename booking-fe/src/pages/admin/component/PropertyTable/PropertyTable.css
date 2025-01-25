@@ -1,0 +1,131 @@
+/* src/components/PropertyTable/PropertyTable.css */
+
+/* Container for the property table */
+.propertyTableGridContainer {
+  height: 100%;
+  width: 100%;
+  overflow: auto; /* Enables scrolling if content overflows */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Blurred state when dialog is open */
+.propertyTableGridContainer.blurred {
+  filter: blur(5px); /* Apply blur */
+  pointer-events: none; /* Disable interactions with blurred content */
+}
+
+/* Style for the DataGrid */
+.propertyTableGrid {
+  height: 100%;
+  width: 100%;
+  min-width: 600px; /* Ensure a minimum width to prevent overflow */
+}
+
+/* Action Buttons */
+.propertyCellAction {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* View Button Styles */
+.propertyViewButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #1976d2; /* Blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.propertyViewButton:hover {
+  background-color: #1565c0; /* Darker Blue */
+}
+
+/* Delete Button Styles */
+.propertyDeleteButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.propertyDeleteButton:hover {
+  background-color: darkred;
+}
+
+/* Rate Cell Styles */
+.propertyRateCell {
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Role Indicator Styles */
+.propertyCellWithRole {
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold; /* Make the text thick */
+  color: white; /* Default text color */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+@media (max-width: 768px) {
+  .propertyTableGridContainer {
+    padding: 2px;
+  }
+
+  .propertyCellAction {
+    gap: 10px;
+  }
+
+  .propertyViewButton,
+  .propertyDeleteButton {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  .propertyRateCell,
+  .propertyCellWithRole {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+}
+
+/* Custom Scrollbar Styles (Optional) */
+
+/* For WebKit browsers (Chrome, Safari) */
+.propertyTableGridContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.propertyTableGridContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.propertyTableGridContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.propertyTableGridContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+.propertyTableGridContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}

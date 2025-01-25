@@ -1,0 +1,57 @@
+.review-detail {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.review-detail p {
+  margin: 0;
+}
+
+.review-detail-profile {
+  display: flex;
+  flex: 1;
+}
+
+.review-detail-content {
+  flex: 3;
+}
+
+.review-detail-overview {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.review-detail-date,
+.review-detail-title,
+.review-detail-rate,
+.review-detail-text,
+.review-detail-response {
+  margin: 5px;
+}
+
+.review-detail-text {
+  display: inline-block;
+
+  width: 98%;
+}
+
+.review-detail-rate {
+  aspect-ratio: 1;
+  text-align: center;
+  background-color: green;
+
+  width: 30px;
+  text-align: center;
+  border-radius: 15%;
+}
+
+.review-detail-rate > p {
+  color: white;
+}
+
+.review-detail-response {
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
+}

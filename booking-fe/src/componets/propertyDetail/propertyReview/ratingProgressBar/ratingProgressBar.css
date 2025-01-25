@@ -1,0 +1,30 @@
+.progressBar-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.categorize-point {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Left takes available space, right takes only necessary space */
+  margin-bottom: 10px;
+}
+
+.categorize-point p {
+  margin: 0;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  width: 100%; /* Ensure the progress bar has a width */
+  border-radius: 4px;
+}
+
+.fill {
+  height: 100%;
+  background: #28a745; /* Green color for the progress bar */
+  border-radius: 4px;
+  transition: width 0.3s ease; /* Optional: smooth transition effect */
+}

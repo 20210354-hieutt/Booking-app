@@ -1,0 +1,309 @@
+.property-details-container {
+  display: flex;
+  justify-content: center;
+  min-height: 200vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.update-form {
+  width: calc(83% + 10px);
+}
+.container-map {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 25%;
+  margin-top: 30px;
+  height: 1500px;
+  max-height: auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.mini-mapp {
+  position: relative;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+.container-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.property-details-form {
+  background-color: #fff;
+  padding: 50px 40px;
+  width: 60%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+}
+
+.property-details-form h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.form-sectionn {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+label {
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+select {
+  width: 100%;
+  padding: 14px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+  margin: 10px 0;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+  margin: 10px 0;
+}
+input {
+  width: 75%;
+  padding: 14px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+  margin: 10px 0;
+}
+
+.form-sectionn textarea {
+  resize: vertical;
+}
+
+.form-sectionn input:focus,
+.form-sectionn select:focus,
+.form-sectionn textarea:focus {
+  border-color: #0071c2;
+  box-shadow: 0 0 5px rgba(0, 113, 194, 0.2);
+}
+
+.submit-button {
+  width: 50%;
+  padding: 16px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #005fa3;
+}
+
+.room-section {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.room-section h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+.room-section .form-sectionn {
+  display: flex;
+  flex-direction: row;
+  height: 410px;
+}
+
+.room-section .form-sectionn .container-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.room-section .form-sectionn .container-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.add-room-button {
+  margin-left: 25%;
+  width: 50%;
+
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-property-button {
+  margin-left: 27%;
+  width: 46%;
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-property-button:hover {
+  background-color: #218838;
+}
+
+.add-room-button:hover {
+  background-color: #218838;
+}
+
+.remove-room-button {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 50%;
+  margin-left: 25%;
+  padding: 10px;
+  color: white;
+  background-color: #dc3545;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-room-button:hover {
+  background-color: #c82333;
+}
+.open-map-buttonn {
+  position: absolute;
+  z-index: 900;
+  bottom: 20px;
+  left: 120px;
+  padding: 10px 20px;
+  background-color: #0c969c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.open-map-buttonnn {
+  position: absolute;
+  z-index: 900;
+  bottom: 20px;
+  left: 160px;
+  padding: 10px 20px;
+  background-color: #0c969c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.open-map-buttonn:hover {
+  background-color: #0a7075;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 8px;
+  height: 850px;
+}
+
+.circle-close-button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+  border: none;
+  background-color: white; /* White background */
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a floating effect */
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.circle-close-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.circle-close-button:focus {
+  outline: none;
+}
+
+.image-preview {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+}
+.slick-slide {
+  overflow: visible !important; /* Cho phép phần tử con hiển thị */
+  position: relative; /* Đảm bảo nút xóa hiển thị trên ảnh */
+}
